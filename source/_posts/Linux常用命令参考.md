@@ -20,6 +20,7 @@ linux常用命令
 	filename.ext.gz
 	[root]# gunzip filename.ext.gz
 ```
+<!-- more -->
 ### 2. tar
 ```shell
 	[root]# tar -czvf boot.tgz /boot
@@ -34,7 +35,6 @@ linux常用命令
 ```
 ### 4. cpio
 
-<!-- more -->
  -  备份
 ```shell
 	[root]# find /etc -name *.conf | cpio -cov > /tmp/conf.cpio
