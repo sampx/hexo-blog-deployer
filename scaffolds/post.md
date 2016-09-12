@@ -1,8 +1,8 @@
 ---
 title: {{ title }}
 date: {{ date }}
-ategories: 未分类
+categories: 未分类
 tags:
   - 默认
 ---
----
+-----
