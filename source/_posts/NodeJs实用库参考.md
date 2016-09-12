@@ -68,3 +68,68 @@ require(''minimist'')('one two three -- four five --six'.split(' '), { '--': tru
 Note that with opts['--'] set, parsing for arguments still stops after the --.
 
 > * opts.unknown - a function which is invoked with a command line parameter not defined in the opts configuration object. If the function returns false, the unknown option is not added to argv.
+
+## Camel Case
+
+驼峰命名格式化工具
+
+- 安装
+
+npm install camel-case --save
+
+- 使用
+
+```
+var camelCase = require('camel-case')
+
+camelCase('string')         //=> "string"
+camelCase('dot.case')       //=> "dotCase"
+camelCase('PascalCase')     //=> "pascalCase"
+camelCase('version 1.2.10') //=> "version_1_2_10"
+
+camelCase('STRING 1.2', 'tr') //=> "strıng_1_2"
+
+camelCase('string 1 2 3', null, true) //=> "string123"
+```
+
+## No Case
+
+转换字符串为小写并以空格分割格式化工具
+
+- 安装
+
+npm install no-case --save
+
+- 使用
+
+```
+var noCase = require('no-case')
+
+noCase(null)              //=> ""
+noCase('string')          //=> "string"
+noCase('dot.case')        //=> "dot case"
+noCase('camelCase')       //=> "camel case"
+noCase('Beyoncé Knowles') //=> "beyoncé knowles"
+
+noCase('A STRING', 'tr') //=> "a strıng"
+
+noCase('HELLO WORLD!', null, '_') //=> "hello_world"
+```
+
+## node-readme
+
+采用一个ES6的模板，自动生成README.md文件
+
+- 安装
+
+npm install --save-dev node-readme
+
+- 使用
+在package.json文件中为你的模块增加一个命令：然后可以用 npm run readme 命令来生成README.md文件
+
+```
+"scripts": {
+  "readme": "node ./node_modules/.bin/node-readme"
+},
+```
+[详细模板](https://github.com/revolunet/node-readme/blob/master/src/.README.md)
