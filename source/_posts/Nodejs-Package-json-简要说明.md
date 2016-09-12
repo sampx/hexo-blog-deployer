@@ -1,7 +1,7 @@
 ---
 title: Nodejs Package.json 简要说明
 date: 2016-09-09 23:30:38
-ategories: 技术笔记
+categories: 技术笔记
 tags:
   - Nodejs
 ---

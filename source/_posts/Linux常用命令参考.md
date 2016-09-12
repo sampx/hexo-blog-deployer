@@ -1,26 +1,22 @@
 ---
 title: Linux常用命令参考
-date: 2016-09-08 17:29:23
+date: “2016-09-08 17:29:23”
 categories: 技术笔记
 tags:
   - Linux
 ---
----
-linux常用命令
-=============
-标签（空格分隔）： Linux 技术 os 操作系统
--------------------
+--------
 ## 一、文件压缩和打包
--------------------
-[toc]
+
 ### 1. gzip/gunzip
-```shell
+<!-- more -->
+```sh
 	[root]# gzip filename.ext
 	[root]# ls -l
 	filename.ext.gz
 	[root]# gunzip filename.ext.gz
 ```
-<!-- more -->
+
 ### 2. tar
 ```shell
 	[root]# tar -czvf boot.tgz /boot
