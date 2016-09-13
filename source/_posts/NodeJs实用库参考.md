@@ -1,35 +1,38 @@
 ---
 title: NodeJs实用库参考
+date: "2016-09-12 20:43:45"
 categories: 技术参考
 tags:
-  - NodeJs
-date: 2016-09-12 20:43:45
+- Nodejs
+comments: true
 ---
------
+收录Nodejs使用包，并配以示例介绍用法，日拱一卒，不断积累更新。随着收录的包数量增长，以后再进行提炼和分类。
+<!-- more -->
+
 ## minimist
 
 解析命令行参数和选项
 
-1. 创建一个新目录
+- 创建一个新目录
 
 mkdir test && cd test
 
-2. 用npm初始化一个package.json
+- 用npm初始化一个package.json
 
 npm init //按引导回答一系列提示
 
-3. 安装minimist包
+- 安装minimist包
 
 npm install minimist --save
 
-4. 新建minimist文件夹并创建一个新文件parse.js，写入以下代码：
+- 新建minimist文件夹并创建一个新文件parse.js，写入以下代码：
 
 ```js
 var argv = require('minimist')(process.argv.slice(2));
 console.dir(argv);
 ```
 
-5. 执行程序
+- 执行程序
 
 ```
 node minimist/parse.js -a beep -b boop

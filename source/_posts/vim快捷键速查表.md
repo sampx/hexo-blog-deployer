@@ -1,13 +1,13 @@
 ---
 title: vim快捷键速查表
-date: 2016-09-06 11:53:24
+date: "2016-09-06 11:53:24"
 categories: 技术笔记
 tags:
   - Linux
   - 编码工具
-author: Sam
 ---
----
+vim速查表。
+<!-- more -->
 
 ## 编辑模式
 ```flow
@@ -17,7 +17,6 @@ edit=>operation: 编辑模式
 command=>operation: 命令模式
 
 vi->normal->edit->command
-
 ```
 todo: 学习flow高级语法
 

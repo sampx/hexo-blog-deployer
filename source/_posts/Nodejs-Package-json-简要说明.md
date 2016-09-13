@@ -1,17 +1,19 @@
 ---
 title: Nodejs Package.json 简要说明
-date: 2016-09-09 23:30:38
+date: "2016-09-09 23:30:38"
 categories: 技术笔记
 tags:
-  - Nodejs
+- Nodejs
+comments: true
 ---
----
+Nodejs包定义文件，配置参数详细解读。
+<!-- more -->
 *TODO：以后会区分出不同的Node版本支持的配置参数*
 
 Package.json文件描述了一个NPM包的所有相关信息，包括作者、简介、包依赖、构建等信息。格式必须是严格的JSON格式。
 
 通常我们在创建一个NPM程序时，可以使用`npm init`命令，通过交互式的命令，自动生成一个package.json文件，里面包含了常用的一些字段信息，但远不止这么简单。通过完善package.json文件，我们可以让npm命令更好地为我们服务。下面简要介绍包定义文件中各部分的作用和含义：
-<!-- more -->
+
 - name & version
 name和version是package.json中最重要的两个字段，也是发布到NPM平台上的唯一标识，如果没有正确设置这两个字段，包就不能发布和被下载。
 **name字段：**新版本的NPM可以指定scope, 名字可以加前缀标识，如`@ijse/mypackage`

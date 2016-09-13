@@ -3,13 +3,13 @@ title: Linux常用命令参考
 date: “2016-09-08 17:29:23”
 categories: 技术笔记
 tags:
-  - Linux
+- Linux
 ---
---------
+记录Linux常用命令及用法，随便写写，加深记忆，自用备查。
+<!-- more -->
 ## 一、文件压缩和打包
 
 ### 1. gzip/gunzip
-<!-- more -->
 ```sh
 	[root]# gzip filename.ext
 	[root]# ls -l
@@ -39,6 +39,7 @@ tags:
 ```shell
 	[root]# cpio --absolute-filenames -icvu < /tmp/conf.cpio
 ```
+
 ## 二、文件系统
 ---------------------
 ### 1. 分区

@@ -1,9 +1,9 @@
 ---
 title: {{ title }}
-date: {{ date }}
-tags:
+date: "{{ date }}"
 categories: 未分类
 tags:
-  - 默认
+- 草稿
 ---
------
+仅供学习记录备查使用。
+<!-- more -->
