@@ -43,7 +43,7 @@ console模块有两个属性：
 1.获取路径和参数，注意所有的文件目录路径加载都是基于你执行目录或用--cwd制定的目录，正常应该是你网站生成器的主目录。
 2.将自己注册为事件发射器
 3.定义资源目录：public、source、node_modules、scripts、scaffolds、themes以及themes下面的scripts目录
-4.将各类调试以及生成参数定义到env属性中
+4.将各类调试以及生成参数（包括启动hexo时的参数），定义到env属性中
 5.加载配置文件，默认是基目录下的_config.yml，也可以从--config参数自行制定
 6.加载扩展
   - console： 命令注册中心，见“extend/console模块“节
@@ -55,3 +55,4 @@ console模块有两个属性：
   - processor：处理器注册中心
   - renderer：视图渲染器注册中心
   - tag
+7.设置config、log、render、route、post、scaffold、database
