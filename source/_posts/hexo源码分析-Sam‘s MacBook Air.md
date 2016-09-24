@@ -1,6 +1,6 @@
 ---
-title: Hexo源码分析
-date: “2016-09-22 17:29:23”
+title: Linux常用命令参考
+date: “2016-09-15 17:29:23”
 categories: 技术笔记
 tags:
 - Nodejs
@@ -9,7 +9,7 @@ tags:
 （hexo-cli的安装请自行查阅网站）
 hexo命令从usr/local/bin目录加载，调用../lib
 /node_modules/hexo-cli/bin/hexo,再调用../lib/hexo.js
-<!-- more -->
+
 ## 主程序模块
 入口entry:
 1.获取命令cmd和参数args，并对args用minimist进行处理。
