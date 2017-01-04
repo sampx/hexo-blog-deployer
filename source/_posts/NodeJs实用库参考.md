@@ -136,3 +136,8 @@ npm install --save-dev node-readme
 },
 ```
 [详细模板](https://github.com/revolunet/node-readme/blob/master/src/.README.md)
+
+## 其他
+通配符匹配：Glob： https://github.com/isaacs/node-glob
+时间处理工具：Moments：http://momentjs.com/
+项目生成器脚手架： http://yeoman.io/
