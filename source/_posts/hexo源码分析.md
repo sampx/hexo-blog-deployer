@@ -10,6 +10,7 @@ tags:
 hexo命令从usr/local/bin目录加载，调用../lib
 /node_modules/hexo-cli/bin/hexo,再调用../lib/hexo.js
 <!-- more -->
+
 ## 主程序模块
 入口entry:
 1.获取命令cmd和参数args，并对args用minimist进行处理。
