@@ -1,9 +1,9 @@
 ---
 title: RabbitMQ学习
 date: '2017-01-04 14:02:39'
-categories: RabbitMQ
+categories: 技术笔记
 tags:
-  - 学习笔记
+  - RabbitMQ  
 comments: true
 keywords: RabbitMQ
 description: RabbitMQ学习笔记
