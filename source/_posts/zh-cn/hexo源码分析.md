@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Hexo源码分析
-date: “2016-09-22 17:29:23”
-updated: "2017-04-09 18:38:15"
+date: 2016-09-22 17:29:23
 categories: 技术笔记
 tags:
 - Hexo
@@ -10,15 +9,11 @@ comments: true
 keywords:
 description:
 ---
-{% blockquote David Levithan, Wide Awake %}
-Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.
-{% endblockquote %}
 
 ## 从hexo-cli开始
 （hexo-cli的安装请自行查阅网站）
 hexo命令从usr/local/bin目录加载，调用../lib
 /node_modules/hexo-cli/bin/hexo,再调用../lib/hexo.js
-<!-- more -->
 
 ## 主程序模块
 入口entry:

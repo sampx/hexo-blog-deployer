@@ -1,6 +1,6 @@
 ---
 title: RabbitMQ学习
-date: '2017-01-04 14:02:39'
+date: 2017-01-04 14:02:39
 categories: 技术笔记
 tags:
   - RabbitMQ  
@@ -10,7 +10,6 @@ description: RabbitMQ学习笔记
 ---
 仅供学习记录备查使用。
 [原始网站](http://rabbitmq.mr-ping.com/)
-<!-- more -->
 
 ## 名词
 

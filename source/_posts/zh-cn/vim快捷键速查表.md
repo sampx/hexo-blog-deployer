@@ -1,13 +1,12 @@
 ---
 title: vim快捷键速查表
-date: "2016-09-06 11:53:24"
+date: 2016-09-06 11:53:24
 categories: 技术笔记
 tags:
   - Linux
   - 编码工具
 ---
 vim速查表。
-<!-- more -->
 
 ## 编辑模式
 ```flow

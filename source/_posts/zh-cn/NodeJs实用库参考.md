@@ -1,13 +1,12 @@
 ---
 title: NodeJs实用库参考
-date: "2016-09-12 20:43:45"
+date: 2016-09-12 20:43:45
 categories: 技术参考
 tags:
 - Nodejs
 comments: true
 ---
 收录Nodejs使用包，并配以示例介绍用法，日拱一卒，不断积累更新。随着收录的包数量增长，以后再进行提炼和分类。
-<!-- more -->
 
 ## minimist
 

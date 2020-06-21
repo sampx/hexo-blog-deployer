@@ -1,6 +1,6 @@
 ---
 title: 替换Homebrew国内源
-date: '2017-01-05 20:45:31'
+date: 2017-01-05 20:45:31
 categories: 实用技巧
 tags:
   Mac
@@ -10,7 +10,7 @@ description: Homebrew是OS X上类似APT(apt-get)、Yum的一个软件包管理�
 ---
 Homebrew是OS X上类似APT(apt-get)、Yum的一个软件包管理器。 所以，虽然你侥幸下载到了brew，但你肯定是无法更新brew的。原因你懂。不过虽然不能更新brew，但这只是指brew这个管理器本身罢了，软件还是可以安装的。但由于无法使用brew update也就无法更新...
 ** 注意：本方法适合1.1.6版的Homebrew，老版本要用另外的办法（文中有介绍）
-<!-- more -->
+
 ## 检查home brew的版本
 ```
 brew -v

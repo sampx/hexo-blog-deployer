@@ -1,13 +1,12 @@
 ---
 title: NodeJs-REPL参考
-date: "2017-01-04 20:43:45"
+date: 2017-01-04 20:43:45
 categories: 技术参考
 tags:
 - Nodejs
 comments: true
 ---
 REPL表示读取评估和演示打印循环(Read Eval Print Loop)，它代表一个命令输入和系统在交互模式的输出响应窗口控制台或Unix/ Linux的shell计算机环境。 Node.js附带了一个REPL环境。它执行以下期望的任务。
-<!-- more -->
 Node REPL结合Node.js的代码试验非常有用，用于调试JavaScript代码。
 
 - Read - 读取用户的输入，解析在内存中输入JavaScript数据结构和存储。

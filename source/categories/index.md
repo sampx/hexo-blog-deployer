@@ -1,6 +1,6 @@
 ---
-title: categories
-date: 2016-09-09 09:59:41
+layout: page
+title: 分类
 type: "categories"
 comments: false
 ---

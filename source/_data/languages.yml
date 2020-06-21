@@ -1,0 +1,14 @@
+# language
+zh-CN:
+  # items
+  post:
+    copyright:
+      # the translation you perfer
+      author: 本文博主
+  page:
+    tag: 标签
+  sidebar:
+    overview: 博主
+en:
+  menu:
+    schedule: Calendar
