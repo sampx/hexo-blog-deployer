@@ -8,4 +8,7 @@ public/
 db_*.json
 themes/*
 *.token
+debug.log
 yuque.json
+source/_docs
+source/images/_docs

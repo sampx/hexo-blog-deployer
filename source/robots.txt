@@ -3,6 +3,7 @@ Allow: /
 Allow: /archives/
 Allow: /categories/
 Allow: /about/
+Allow: /tags/
 
 Disallow: /vendors/
 Disallow: /js/
@@ -10,6 +11,8 @@ Disallow: /css/
 Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
+Disallow: /images/
+Disallow: /lib/
 
 Sitemap: http://blog.udock.cn/sitemap.xml
 Sitemap: http://blog.udock.cn/baidusitemap.xml

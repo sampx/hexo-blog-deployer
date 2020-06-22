@@ -27,11 +27,13 @@ pretty_urls:
 source_dir: source
 public_dir: public
 tag_dir: tags
-archive_dir: archives
+archive_dir: archives/
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: "googlec0f45ab803f091c4.html"
+skip_render: 
+  - 'robots.txt'
+  - 'googlec0f45ab803f091c4.html'
 
 # Writing
 # File name of new posts
@@ -48,9 +50,9 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace: '  '
-  wrap: true
-  hljs: false
+  tab_replace:
+  #wrap: true
+  #hljs: false
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -61,9 +63,22 @@ index_generator:
   per_page: 6
   # order_by: -date
 
+archive_generator:
+  per_page: 12
+  yearly: true
+  monthly: true
+  daily: false
+
+category_generator:
+  per_page: 5
+
+tag_generator:
+  per_page: 5
+  enable_index_page: false
+
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 10
+per_page: 5
 pagination_dir: page
 
 # Category & Tag
@@ -79,6 +94,10 @@ date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 #如果 Front Matter 中没有指定 updated， post.updated 将会使用 date 的值而不是文件的创建时间。
 use_date_for_updated: true
+
+marked:
+  # For preserve original quotes in code blocks.
+  smartypants: false
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
@@ -108,7 +127,7 @@ search:
   field: all
   content: true
   format: html
-  limit: 10000
+  limit: 100
 
 # Post wordcount display settings
 # Dependencies: https://github.com/next-theme/hexo-word-counter
@@ -172,7 +191,6 @@ theme_config:
   footer:
     # Specify the date when the site was setup. If not defined, current year will be used.
     since: 2016
-
     # Icon between year and copyright info.
     icon:
       # Icon name in Font Awesome. See: https://fontawesome.com/icons
@@ -180,10 +198,10 @@ theme_config:
       # If you want to animate the icon, set it to true.
       animated: true
       # Change the color of icon, using Hex Code.
-      color: "#ff0000"
+      color: "#808080"
 
     # If not defined, `author` from Hexo `_config.yml` will be used.
-    copyright:
+    copyright: uDock
 
     # Powered by Hexo & NexT
     powered: false
@@ -206,10 +224,9 @@ theme_config:
   # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
   creative_commons:
     license: by-nc-sa
-    sidebar: false
+    sidebar: true
     post: false
     language:
-
 
   # ---------------------------------------------------------------
   # Scheme Settings
@@ -240,20 +257,56 @@ theme_config:
     tags: /tags/ || fa fa-tags
     categories: /categories/ || fa fa-th
     archives: /archives/ || fa fa-archive
-    #Docs:
-    #  default: /docs/ || fa fa-book  # 子菜单
-    #  Third Party Services:
-    #    default: /third-party-services/ || fa fa-plug
-    #    Algolia Search: /algolia-search/ || fa fa-search-plus
     #schedule: /schedule/ || fa fa-calendar
     #sitemap: /sitemap.xml || fa fa-sitemap
     #commonweal: /404/ || fa fa-heartbeat
+    ## 以下是多级目录示例
+    # Docs:
+    #   default: /docs/ || fa fa-book
+    #   Getting Started:
+    #     default: /getting-started/ || fa fa-flag
+    #     Installation: /installation.html || fa fa-download
+    #     Deployment: /deployment.html || fa fa-upload
+    #     Configuration: /configuration.html || fa fa-wrench
+    #     Internationalization: /internationalization.html || fa fa-globe
+    #     Update from 5.x: /update-from-v5.html || fa fa-retweet
+    #   Theme Settings:
+    #     default: /theme-settings/ || fa fa-star
+    #     Footer: /footer.html || far fa-sticky-note
+    #     Sidebar: /sidebar.html || fa fa-bars
+    #     Posts: /posts.html || fa fa-paragraph
+    #     Custom Pages: /custom-pages.html || far fa-edit
+    #     Custom Files: /custom-files.html || fa fa-palette
+    #     SEO: /seo.html || fa fa-external-link-square-alt
+    #     Front Matter: /front-matter.html || fa fa-heading
+    #   Third Party Services:
+    #     default: /third-party-services/ || fa fa-puzzle-piece
+    #     Math Equations: /math-equations.html || fa fa-square-root-alt
+    #     Comment Systems: /comments.html || far fa-comment
+    #     Statistics and Analytics: /statistics-and-analytics.html || fa fa-chart-pie
+    #     Post Widgets: /post-widgets.html || fa fa-gift
+    #     Search Services: /search-services.html || fa fa-search-plus
+    #     Chat Services: /chat-services.html || fa fa-comments
+    #     External Libraries: /external-libraries.html || fa fa-plug
+    #   Tag Plugins:
+    #     default: /tag-plugins/ || fa fa-rocket
+    #     Note: /note.html || fa fa-adjust
+    #     Tabs: /tabs.html || fa fa-columns
+    #     PDF: /pdf.html || far fa-file-pdf
+    #     Mermaid: /mermaid.html || fa fa-project-diagram
+    #     Label: /label.html || fa fa-hat-wizard
+    #     Video: /video.html || fa fa-play-circle
+    #     Button: /button.html || fa fa-cube
+    #     Caniuse: /caniuse.html || fa fa-signal
+    #     Group Pictures: /group-pictures.html || far fa-images
+    #     Link Grid: /link-grid.html || fa fa-grip-vertical
+    #   Advanced Settings: /advanced-settings.html || fa fa-cog
+    #   Troubleshooting: /troubleshooting.html || fa fa-life-ring    
 
   # Enable / Disable menu icons / item badges.
   menu_settings:
     icons: true
     badges: true
-
 
   # ---------------------------------------------------------------
   # Sidebar Settings
@@ -292,7 +345,7 @@ theme_config:
     rotated: false
 
   # Posts / Categories / Tags in sidebar.
-  site_state: false
+  site_state: true
 
   # Social Links
   # Usage: `Key: permalink || icon`
@@ -451,7 +504,6 @@ theme_config:
     singleEvents: true
     maxResults: 250
 
-
   # ---------------------------------------------------------------
   # Misc Theme Settings
   # ---------------------------------------------------------------
@@ -467,7 +519,7 @@ theme_config:
 
   # Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
   #android_chrome_color: "#222"
-  android_chrome_color: "#c62d2d"
+  android_chrome_color: "#222"
 
   # Custom Logo (Do not support scheme Mist)
   custom_logo: #/images/sam.jpg
@@ -530,42 +582,34 @@ theme_config:
   # To avoid space between header and sidebar in scheme Pisces / Gemini, Web Safe fonts are recommended for `global` (and `title`):
   # Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
   # ---------------------------------------------------------------
-
   font:
     enable: true
-
     # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
     host: https://fonts.loli.net
     #host: https://fonts.useso.com
-
     # Font options:
     # `external: true` will load this font family from `host` above.
     # `family: Times New Roman`. Without any quotes.
     # `size: x.x`. Use `em` as unit. Default: 1 (16px)
-
     # Global font settings used for all elements inside <body>.
     global:
       external: true
       family: Lato
-      size: 0.9
-
+      size: 1.1
     # Font settings for site title (.site-title).
     title:
       external: true
       family: Lobster Two
       size: 1.8
-
     # Font settings for headlines (<h1> to <h6>).
     headings:
       external: true
       family:
       size:
-
     # Font settings for posts (.post-body).
     posts:
       external: true
       family: 
-
     # Font settings for <code> and code blocks.
     codes:
       external: true
@@ -626,13 +670,11 @@ theme_config:
     # That is it only render those page which has `mathjax: true` in Front-matter.
     # If you set it to false, it will load mathjax / katex srcipt EVERY PAGE.
     per_page: true
-
     # hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.
     mathjax:
       enable: false
       # See: https://mhchem.github.io/MathJax-mhchem/
       mhchem: false
-
     # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) required for full Katex support.
     katex:
       enable: false
@@ -665,30 +707,25 @@ theme_config:
   # For more information: https://github.com/GoogleChromeLabs/quicklink
   # Front-matter variable (unsupport home archive).
   quicklink:
-    enable: false
-
+    enable: true
     # Home page and archive page can be controlled through home and archive options below.
     # This configuration item is independent of `enable`.
     home: false
     archive: false
-
     # Default (true) will initialize quicklink after the load event fires.
     delay: true
     # Custom a time in milliseconds by which the browser must execute prefetching.
     timeout: 3000
     # Default (true) will enable fetch() or falls back to XHR.
     priority: true
-
     # For more flexibility you can add some patterns (RegExp, Function, or Array) to ignores.
     # See: https://github.com/GoogleChromeLabs/quicklink#custom-ignore-patterns
     ignores:
-
 
   # ---------------------------------------------------------------
   # Comments Settings
   # See: https://theme-next.js.org/docs/third-party-services/comments
   # ---------------------------------------------------------------
-
   # Multiple Comment System Support
   comments:
     # Available values: tabs | buttons
@@ -915,16 +952,16 @@ theme_config:
     #  - modern    bs-callout new (v2-v3) alert style.
     #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
     #  - disabled  disable all CSS styles import of note tag.
-    style: modern
-    icons: false
-    # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
+    style: flat
+    icons: true
+    # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6)
     # Offset also applied to label tag variables. This option can work with disabled note tag.
-    light_bg_offset: 0
+    light_bg_offset: -20
 
   # Tabs tag
   tabs:
     transition:
-      tabs: false
+      tabs: true
       labels: true
 
   # PDF tag
@@ -942,7 +979,6 @@ theme_config:
     # Available themes: default | dark | forest | neutral
     theme: forest
 
-
   # ---------------------------------------------------------------
   # Animation Settings
   # ---------------------------------------------------------------
@@ -950,8 +986,8 @@ theme_config:
   # Use velocity to animate everything.
   # For more information: http://velocityjs.org
   motion:
-    enable: false
-    async: false
+    enable: true
+    async: true
     transition:
       # Transition variants:
       # fadeIn | flipXIn | flipYIn | flipBounceXIn | flipBounceYIn
@@ -1009,7 +1045,7 @@ theme_config:
 
     # Internal version: 3.1.0
     # anime: //cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js
-    anime:
+    anime: //cdn.jsdelivr.net/npm/animejs@3/lib/anime.min.js
 
     # Internal version: 5.13.0
     # fontawesome: //cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css
@@ -1123,5 +1159,4 @@ theme_config:
 
     # Internal version: 1.0.0
     # canvas_ribbon: //cdn.jsdelivr.net/gh/next-theme/theme-next-canvas-ribbon@1/canvas-ribbon.js
-    canvas_ribbon: //cdn.jsdelivr.net/gh/next-theme/theme-next-canvas-ribbon@1/canvas-ribbon.js
-    
+    canvas_ribbon: //cdn.jsdelivr.net/gh/next-theme/theme-next-canvas-ribbon@1/canvas-ribbon.js    
