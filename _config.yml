@@ -49,13 +49,22 @@ render_drafts: true               # 显示草稿 默认 false
 post_asset_folder: true           # 启用 资源文件夹 默认 false
 relative_link: false              # 把链接改为与根目录的相对位址 默认 false
 future: true                      # 显示未来的文章 默认 true
+syntax_highlighter: highlight.js  # 代码高亮，默认highlight.js，可选prismjs
+# 高量显示，参考详细文档：https://hexo.io/zh-cn/docs/syntax-highlight
 highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace:
-  #wrap: true
-  #hljs: false
+  auto_detect: false              # 十分耗费资源。 如果你不需要使用「子语言高亮」功能，或者不介意在书写代码块时标记语言，请不要启用此功能。
+  line_number: true               # highlight.js 不支持行号显示。此处开启hexo扩展功能
+  wrap: true                      # 如果要保持 highlight.js 原来的行为，你需要将 line_number 和 wrap 全部关闭
+  line_threshold: 10              # 只有代码块的行数超过这个阈值才显示行数。 默认值为 0
+  tab_replace: ""                 # 将代码块内的 \t 替换为给定的字符串。 默认为 2 个空格
+  exclude_languages:              # 如果语言符合这个选项，则输出仅仅会被 <pre><code class="lang"></code></pre> 包裹
+    - example
+  hljs: false                     # 当 line_number 和 wrap 为 false，hljs 为 true 的时候，你可以在站点上直接应用 highlight.js 的主题。
+prismjs:
+  preprocess: true                # 支持浏览器端高亮（preprocess 设置为 false）和服务器端高亮（preprocess 设置为 true）两种方式。
+  line_number: true               
+  line_threshold: 10
+  tab_replace: ""
 
 # 首页设置
 index_generator:
@@ -86,7 +95,7 @@ pagination_dir: page   # URL format 默认：page，如：http://example.com/pag
 # 扩展和主题 
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next                          # 当前主题名称。值为false时禁用主题，会自动读取 _config.next.yml 文件中的设置
+theme: hexo-theme-skapp # 当前主题名称。值为false时禁用主题，会自动读取 _config.next.yml 文件中的设置
 
 # 主题配置
 # theme_config: # 内联主题配置，可转移到外部文件
