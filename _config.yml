@@ -95,7 +95,7 @@ pagination_dir: page   # URL format 默认：page，如：http://example.com/pag
 # 扩展和主题 
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hueman # 当前主题名称。值为false时禁用主题，会自动读取 _config.next.yml 文件中的设置
+theme: next # 当前主题名称。值为false时禁用主题，会自动读取 _config.next.yml 文件中的设置
 
 # 主题配置
 # theme_config: # 内联主题配置，可转移到外部文件

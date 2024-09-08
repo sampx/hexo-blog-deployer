@@ -10,7 +10,8 @@ themes/*
 *.token
 debug.log
 yuque.json
-source/_docs
+source/_docss
 source/images/_docs
 conf_backup/
 *.sqbpro
+.continuerc.json
