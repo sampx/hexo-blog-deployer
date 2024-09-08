@@ -12,3 +12,5 @@ debug.log
 yuque.json
 source/_docs
 source/images/_docs
+conf_backup/
+*.sqbpro

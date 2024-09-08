@@ -1,0 +1,253 @@
+{
+    "models": [
+      {
+        "title": "DeepSeek2.5-128K",
+        "model": "deepseek-coder",
+        "apiBase": "https://api.deepseek.com/beta",
+        "apiKey": "sk-3ff0492d5d1343eca7884ff24de3b79c",
+        "contextLength": 8192,
+        "provider": "openai"
+      },
+      {
+        "title": "One-GLM4",
+        "model": "glm-4",
+        "apiBase": "https://aiapi.wopal.cn/v1/",
+        "contextLength": 128000,
+        "apiKey": "sk-27aWRTNdqY8rRfKZ00D48309076144Ea9fFaD94602C32c00",
+        "provider": "openai"
+      },
+      {
+        "title": "FastClaude-128K",
+        "model": "claude",
+        "apiBase": "https://api.fastgpt.in/api/v1",
+        "apiKey": "fastgpt-xqzOJHH5g4Z2Nkr7lGrrRsVBWduA7A8uPmaSM8HTyBc9CCKYd4uMAgAhD7ga0t",
+        "contextLength": 128000,
+        "provider": "openai"
+      },
+      {
+        "title": "Fast-IT老师",
+        "model": "gpt-4o-mini",
+        "apiBase": "https://api.fastgpt.in/api/v1",
+        "apiKey": "fastgpt-mbLpafRJb96Hw1a0gakozZHZ3gme4RTUQL0kyslj6GFfb5bBWfHOhpu9rVyIc0qJc",
+        "contextLength": 128000,
+        "provider": "openai"
+      },
+      {
+        "title": "One-Ernie-Speed-128K",
+        "model": "ernie-speed-128k",
+        "apiBase": "https://aiapi.wopal.cn/v1",
+        "contextLength": 128000,
+        "apiKey": "sk-27aWRTNdqY8rRfKZ00D48309076144Ea9fFaD94602C32c00",
+        "provider": "openai"
+      },
+      {
+        "title": "My-GPT4o-128K-nonefree",
+        "model": "gpt-4o",
+        "contextLength": 128000,
+        "apiBase": "https://api.chatanywhere.com.cn",
+        "apiKey": "sk-AceKsmvmCYO7Mkg8eLFG4IKFK6nO4jhWC8RrhTGOsfDNaEsV",
+        "provider": "openai"
+      },
+      {
+        "title": "My-GPT4o-mini-128K-nonefree",
+        "model": "gpt-4o-mini",
+        "contextLength": 128000,
+        "apiBase": "https://api.chatanywhere.com.cn",
+        "apiKey": "sk-AceKsmvmCYO7Mkg8eLFG4IKFK6nO4jhWC8RrhTGOsfDNaEsV",
+        "provider": "openai"
+      },
+      {
+        "title": "Together-llama3.1-405B",
+        "model": "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
+        "contextLength": 16384,
+        "apiKey": "90e55cdfe2caab0adebb7ee690e60b946c7c7064c90a8f34ffb08a1bec90615e",
+        "provider": "together"
+      },
+      {
+        "title": "Together-llama3-70b-8K",
+        "model": "meta-llama/Llama-3-70b-chat-hf",
+        "contextLength": 8000,
+        "apiKey": "90e55cdfe2caab0adebb7ee690e60b946c7c7064c90a8f34ffb08a1bec90615e",
+        "provider": "together"
+      },
+      {
+        "title": "Together-Qwen1.5-72B-32K",
+        "model": "Qwen/Qwen1.5-72B-Chat",
+        "contextLength": 32768,
+        "apiKey": "90e55cdfe2caab0adebb7ee690e60b946c7c7064c90a8f34ffb08a1bec90615e",
+        "provider": "together"
+      },
+      {
+        "title": "GeminiPro1.5",
+        "model": "gemini-1.5-pro-latest",
+        "contextLength": 1056000,
+        "apiKey": "AIzaSyDs6us3-UwTBj3PLwIjlsyh1EWPvoCQsuc",
+        "provider": "gemini"
+      },
+      {
+        "title": "GeminiPro1.0",
+        "model": "gemini-pro",
+        "contextLength": 32000,
+        "apiKey": "AIzaSyDs6us3-UwTBj3PLwIjlsyh1EWPvoCQsuc",
+        "provider": "gemini"
+      },
+      {
+        "title": "Ollama-DeepSeekCoder-6.7b",
+        "model": "deepseek-coder:6.7b",
+        "apiBase": "http://localhost:11434",
+        "provider": "ollama"
+      },
+      {
+        "title": "Ollama-DeepSeekCoder-1.3b",
+        "model": "Deepseek-Coder:Instruct",
+        "apiBase": "http://localhost:11434",
+        "provider": "ollama"
+      },
+      {
+        "title": "Ollama-Qwen-4b",
+        "model": "qwen:4b",
+        "apiBase": "http://localhost:11434",
+        "provider": "ollama"
+      },
+      {
+        "title": "Ollama-Phi3-mini-128K",
+        "model": "phi3:mini",
+        "apiBase": "http://localhost:11434",
+        "contextLength": 128000,
+        "provider": "ollama"
+      },
+      {
+        "title": "One-kimi-32k",
+        "model": "moonshot-v1-32k",
+        "apiBase": "https://aiapi.wopal.cn/v1/",
+        "contextLength": 32000,
+        "apiKey": "sk-27aWRTNdqY8rRfKZ00D48309076144Ea9fFaD94602C32c00",
+        "provider": "openai"
+      }
+    ],
+    "tabAutocompleteOptions": {
+      "maxPromptTokens": 4096
+    },
+    "tabAutocompleteModel": {
+      "title": "DeepSeek-V2",
+      "model": "deepseek-coder",
+      "apiKey": "sk-3ff0492d5d1343eca7884ff24de3b79c",
+      "contextLength": 8192,
+      "apiBase": "https://api.deepseek.com/beta",
+      "completionOptions": {
+        "maxTokens": 4096,
+        "temperature": 0.1,
+        "topP": 1,
+        "presencePenalty": 0,
+        "frequencyPenalty": 0
+      },
+      "provider": "openai"
+    },
+    "slashCommands": [
+      {
+        "name": "edit",
+        "description": "Edit selected code"
+      },
+      {
+        "name": "comment",
+        "description": "Comment on the selected code in Chinese"
+      },
+      {
+        "name": "share",
+        "description": "Export this session as markdown"
+      },
+      {
+        "name": "cmd",
+        "description": "Generate a shell command"
+      },
+      {
+        "name": "onboard",
+        "description": "Familiarize yourself with the codebase, Response in Chinese"
+      }
+    ],
+    "customCommands": [
+      {
+        "name": "test",
+        "prompt": "Write a comprehensive set of unit tests for the selected code. It should setup, run tests that check for correctness including important edge cases, and teardown. Ensure that the tests are complete and sophisticated. Give the tests just as chat output, don't edit any file.",
+        "description": "Write unit tests for highlighted code"
+      },
+      {
+        "name": "exp",
+        "prompt": "请用中文详细解释这段代码",
+        "description": "explain the seleted code"
+      }
+    ],
+    "contextProviders": [
+      {
+        "name": "tree"
+      },
+      {
+        "name": "folder"
+      },
+      {
+        "name": "highlights"
+      },
+      {
+        "name": "diff",
+        "params": {}
+      },
+      {
+        "name": "open",
+        "params": {}
+      },
+      {
+        "name": "terminal",
+        "params": {}
+      },
+      {
+        "name": "problems",
+        "params": {}
+      },
+      {
+        "name": "codebase",
+        "params": {
+          "nRetrieve": 25,
+          "nFinal": 5,
+          "useReranking": true
+        }
+      },
+      {
+        "name": "code",
+        "params": {}
+      },
+      {
+        "name": "docs",
+        "params": {}
+      },
+      {
+        "name": "search"
+      },
+      {
+        "name": "outline"
+      }
+    ],
+    "allowAnonymousTelemetry": false,
+    "embeddingsProvider0": {
+      "provider": "ollama",
+      "model": "nomic-embed-text:latest",
+      "apiBase": "http://localhost:11434"
+    },
+    "embeddingsProvider": {
+      "provider": "openai",
+      "model": "voyage-code-2",
+      "apiBase": "https://api.voyageai.com/v1/",
+      "apiKey": "pa-Ser-RSaghtmZPD8osaKHUPqBc2XYjO1FXNDDeCAgX0g"
+    },
+    "reranker": {
+      "name": "voyage",
+      "params": {
+        "apiKey": "pa-Ser-RSaghtmZPD8osaKHUPqBc2XYjO1FXNDDeCAgX0g"
+      }
+    },    
+    "docs": [
+      {
+        "title": "Taro Docs",
+        "startUrl": "https://docs.taro.zone/docs/"
+      }
+    ]
+  }

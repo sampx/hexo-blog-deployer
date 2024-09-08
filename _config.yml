@@ -45,7 +45,7 @@ external_link:
   field: post                     # 对整个网站（site）生效或仅对文章（post）生效
   exclude: []                     # 需要排除的域名。 主域名和子域名如 www 需分别配置
 filename_case: 0                  # Transform filenames to 1 lower case; 2 upper case
-render_drafts: true               # 显示草稿 默认 false
+render_drafts: false               # 显示草稿 默认 false
 post_asset_folder: true           # 启用 资源文件夹 默认 false
 relative_link: false              # 把链接改为与根目录的相对位址 默认 false
 future: true                      # 显示未来的文章 默认 true
@@ -95,7 +95,7 @@ pagination_dir: page   # URL format 默认：page，如：http://example.com/pag
 # 扩展和主题 
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next # 当前主题名称。值为false时禁用主题，会自动读取 _config.next.yml 文件中的设置
+theme: hueman # 当前主题名称。值为false时禁用主题，会自动读取 _config.next.yml 文件中的设置
 
 # 主题配置
 # theme_config: # 内联主题配置，可转移到外部文件
